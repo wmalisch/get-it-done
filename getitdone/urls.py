@@ -8,8 +8,10 @@ urlpatterns = [
 
     #Authentication
     path('signup/', views.signupuser, name='signupuser'),
+    path('logout/', views.logoutuser,name='logoutuser'),
 
     #Todo items
+    path('',views.home,name='home'),
     path('current/', views.currenttodos, name='currenttodos'),
 
 ]
