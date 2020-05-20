@@ -13,6 +13,7 @@ urlpatterns = [
 
     #Todo items
     path('',views.home,name='home'),
+    path('create/', views.createtodo,name='createtodos'),
     path('current/', views.currenttodos, name='currenttodos'),
 
 ]
